@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.player-stats {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
