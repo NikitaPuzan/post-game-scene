@@ -1,0 +1,60 @@
+.players-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C2F35;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.player-card:hover {
+    background-color: #E8EDE7;
+    color:#012E4A;
+}
+
+.player-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.player-nickname, .player-score, .player-status {
+    flex: 1;
+    text-transform: capitalize;
+}
+
+.player-nickname {
+    display: flex;
+    justify-content: start;
+}
+
+.tooltip {
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    filter: invert(55%) sepia(100%) saturate(7454%) hue-rotate(208deg) brightness(98%) contrast(109%);
+}
+.done {
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    filter: invert(10%) sepia(100%) saturate(7454%) hue-rotate(100deg) brightness(98%) contrast(109%);
+}
+
+.player-status.alive {
+    color: #64fc64;
+}
+
+.player-status.dead {
+    color: #ff0000;
+}
